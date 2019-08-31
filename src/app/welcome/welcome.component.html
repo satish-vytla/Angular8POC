@@ -1,0 +1,49 @@
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="1rem" fxLayoutAlign="stretch">
+<mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Cloud E Book </mat-card-title>
+          <mat-card-subtitle>STORE UNLIMITED MEMORIES</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../../assets/images/book.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+           We will save your personal data in our cloud DB
+           <br>
+           To enter your memories hit on start button
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-raised-button color="primary" routerLink="/userdetails">Start</a>
+          <!-- <button mat-raised-button color="primary">Start</button> -->
+          <!-- <button mat-raised-button color="primary">Search</button> -->
+        </mat-card-actions>
+      </mat-card>
+
+
+      <!-- //2nd card -->
+
+      <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Events</mat-card-title>
+              <mat-card-subtitle>ARE U OUTDOOR LOVER?</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../assets/images/bird.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+              <p>
+               Discover your next Trail Event
+              </p>
+            </mat-card-content>
+            <mat-card-actions>
+          <!--     <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button> -->
+              <form class="example-form">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Enter a city,park or trail name" value="Lake Tahoe">
+                </mat-form-field>
+                <button mat-raised-button color="primary">Search</button>
+              </form>
+            </mat-card-actions>
+          </mat-card>
+        </div>
