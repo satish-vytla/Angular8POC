@@ -1,14 +1,14 @@
-// product.route.js
+// User.route.js
 
 const express = require('express');
 const app = express();
-const productRoutes = express.Router();
+const userinfoRoutes = express.Router();
 
-// Require Product model in our routes module
+// Require USer model in our routes module
 let UserInfo = require('../models/User');
 
 // Defined store route
-productRoutes.route('/add').post(function (req, res) {
+userinfoRoutes.route('/add').post(function (req, res) {
   console.log('your in post api');
   let userinfo = new UserInfo(req.body);
   userinfo.save()
@@ -21,7 +21,7 @@ productRoutes.route('/add').post(function (req, res) {
 });
 
 // Defined get data(index or listing) route
-productRoutes.route('/').get(function (req, res) {
+userinfoRoutes.route('/').get(function (req, res) {
   UserInfo.find(function (err, userinfos){
     if(err){
       console.log(err);

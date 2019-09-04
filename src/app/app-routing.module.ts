@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { UserDBDataComponent } from './user-dbdata/user-dbdata.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { EventsComponent } from './events/events.component';
 
 
 const routes: Routes = [  {
@@ -21,6 +22,10 @@ const routes: Routes = [  {
 {
   path: 'userdbdata',
   component: UserDBDataComponent
+},
+{
+  path: 'eventPage',
+  component: EventsComponent
 },
 {
   path: '',

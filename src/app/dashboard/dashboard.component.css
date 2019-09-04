@@ -4,7 +4,10 @@
   background: skyblue
 }
 
-
+.example-header-image {
+  background-image: url('../../assets/images/p2.jpg');
+  background-size: cover;
+}
 /* flex
  */
 

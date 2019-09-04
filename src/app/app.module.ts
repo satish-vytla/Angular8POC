@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import {FormsModule,ReactiveFormsModule} from '@angular/forms';
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,7 @@ import { AppComponent } from './app.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { LoadSpinnerComponent } from './libraries/components/load-spinner/load-spinner.component';
 import { LoadSpinnerInterceptor } from './libraries/interceptors/loadspinner.interceptor';
-// import { SnackBarNotificationsComponent } from './libraries/components/snack-bar/snack-bar-notifications.component';
+// import { SnackBarService } from './libraries/services/snackBar.service';
 
 
 import {
@@ -26,10 +27,11 @@ import {
   MatDialogModule,
   MatInputModule,
   MatSelectModule,
-  MatSnackBarModule
+  MatSnackBarModule,MatRadioModule,MatDatepickerModule,MatNativeDateModule
 } from '@angular/material';
 import { UserDBDataComponent } from './user-dbdata/user-dbdata.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { EventsComponent } from './events/events.component';
 
 
 @NgModule({
@@ -38,8 +40,11 @@ import { WelcomeComponent } from './welcome/welcome.component';
     UserDetailsComponent,
     LoadSpinnerComponent,
     UserDBDataComponent,
-    WelcomeComponent
-     ],
+    WelcomeComponent,
+    EventsComponent
+
+  ],
+  
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -56,7 +61,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MatDialogModule,
     MatInputModule,
     MatSnackBarModule,
-    MatSelectModule,FormsModule,ReactiveFormsModule,FlexLayoutModule
+    MatSelectModule, FormsModule, ReactiveFormsModule, FlexLayoutModule,MatRadioModule,MatDatepickerModule,MatNativeDateModule
   ],
   providers: [
     {

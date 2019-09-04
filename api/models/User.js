@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// Define collection and schema for Product
+// Define collection and schema for User
 let UserInfo = new Schema({
   FullName: {
     type: String
